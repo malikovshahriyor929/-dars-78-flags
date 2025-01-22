@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center flex-col gap-9">
+    <header class="w-[90%] mx-auto p-3">
+      <div class="flex items-center justify-between">
+        <a href="./index.html">
+          <img
+            class="h-12"
+            src="https://www.countryflags.com/wp-content/themes/countryflags/assets/images/countryflags.svg"
+            alt=""
+          />
+        </a>
+        <div
+          class="flex gap-3 w-fit pr-4 rounded-md border-primary border-2 search relative"
+        >
+          <input
+            type="text"
+            class="bg-white searchInput text-black p-2 rounded-lg outline-none"
+            placeholder="Search..."
+          />
+          <button>
+            <i
+              class="fa-solid text-[20px] text-primary fa-magnifying-glass"
+            ></i>
+          </button>
+          <div class="absolute top-[42px] bg-white z-50 w-full rounded-md">
+            <div class="flex flex-col gap-2 searchResults"></div>
+          </div>
+        </div>
+
+        <i class="fa-solid text-[24px] fa-cart-shopping text-primary"></i>
+      </div>
+    </header>
+    <section class="flex items-center justify-center">
+      <div class="max-w-xl bg-white shadow-md rounded-lg p-6 text-center">
+        <!-- Title -->
+        <h1 class="text-2xl font-bold mb-4">
+          Flag of <span class="text-blue-600 name">El Salvador</span>
+        </h1>
+
+        <!-- Flag Image -->
+        <div class="aspect-w-16 aspect-h-9 mb-4">
+          <img
+            class="flag border"
+            src="https://upload.wikimedia.org/wikipedia/commons/3/34/Flag_of_El_Salvador.svg"
+            class="w-full h-full object-cover rounded-md"
+          />
+        </div>
+
+        <!-- Description -->
+        <p class="text-gray-700 text-sm mb-6 desciption"></p>
+
+        <!-- Tags -->
+        <div class="flex flex-wrap justify-center gap-2">
+          <span
+            class="bg-gray-200 text-gray-700 text-xs font-medium py-1 px-3 rounded-full"
+            >Emblem</span
+          >
+          <span
+            class="bg-gray-200 text-gray-700 text-xs font-medium py-1 px-3 rounded-full"
+            >Horizontal stripes</span
+          >
+          <span
+            class="bg-gray-200 text-gray-700 text-xs font-medium py-1 px-3 rounded-full"
+            >Leaves</span
+          >
+          <span
+            class="bg-gray-200 text-gray-700 text-xs font-medium py-1 px-3 rounded-full"
+            >Mountain</span
+          >
+          <span
+            class="bg-gray-200 text-gray-700 text-xs font-medium py-1 px-3 rounded-full"
+            >River</span
+          >
+          <span
+            class="bg-gray-200 text-gray-700 text-xs font-medium py-1 px-3 rounded-full"
+            >Text</span
+          >
+        </div>
+      </div>
+    </section>
+    <script src="./admin.bandle.js"></script>
+  </body>
+</html>

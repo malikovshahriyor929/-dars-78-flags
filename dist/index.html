@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      
+    />
+  </head>
+  <body class="bg-[#f1f1f1]">
+    <header class="w-[90%] mx-auto p-3">
+      <div class="flex items-center justify-between">
+        <img
+          class="h-12"
+          src="https://www.countryflags.com/wp-content/themes/countryflags/assets/images/countryflags.svg"
+          alt=""
+        />
+        <div class="flex gap-3 w-fit pr-4 rounded-md border-primary border-2 search relative">
+          <input
+            type="text"
+            class="bg-white searchInput text-black p-2 rounded-lg outline-none"
+            placeholder="Search..."
+          />
+          <button>
+            <i
+              class="fa-solid text-[20px] text-primary fa-magnifying-glass"
+            ></i>
+          </button>
+          <div class="absolute top-[42px]  bg-white z-50 w-full rounded-md">
+           <div class="flex flex-col gap-2 searchResults ">
+        
+           </div>
+          </div>
+        </div>
+        <i class="fa-solid text-[24px] fa-cart-shopping text-primary"></i>
+      </div>
+      <!--   <nav class="flex space-x-4">
+          <a href="#" class="text-gray-700 hover:text-blue-600">Europe</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">Africa</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600">Asia</a>
+          <a href="#" class="text-gray-700 hover:text-blue-600"
+            >North America</a
+          >
+          <a href="#" class="text-gray-700 hover:text-blue-600"
+            >South America</a
+          >
+          <a href="#" class="text-gray-700 hover:text-blue-600">Oceania</a>
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-blue-600">
+              Organizations
+            </button>
+            <div
+              class="absolute hidden group-hover:block bg-white shadow-lg mt-2 rounded p-2"
+            >
+              <a href="#" class="block text-gray-700 hover:text-blue-600">UN</a>
+              <a href="#" class="block text-gray-700 hover:text-blue-600">EU</a>
+            </div>
+          </div>
+          <a href="#" class="text-gray-700 hover:text-blue-600">U.S. States</a>
+        </nav> -->
+    </header>
+
+    <main class="w-[90%] mx-auto">
+      <div class="grid grid-cols-5 gap-2 flags object-cover"></div>
+    </main>
+
+    <script src="./main.bandle.js"></script>
+  </body>
+</html>
