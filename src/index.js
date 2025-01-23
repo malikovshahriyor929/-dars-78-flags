@@ -25,8 +25,8 @@ function getFlags(data) {
         `;
     flags.append(flag);
   });
-//   div class="text-opacity-0"><p class="text-opacity-0">${value.name.common}</p></div>
-//          </div>
+  //   div class="text-opacity-0"><p class="text-opacity-0">${value.name.common}</p></div>
+  //          </div>
 }
 ///// search the data and put the html
 function searchData(data) {
@@ -43,7 +43,7 @@ function searchData(data) {
           let flagResulst = document.createElement("div");
           flagResulst.innerHTML = `
                 <div class="flex items-center cursor-pointer gap-2 p-2 id="${value.area}" ">
-                <img class="h-10 w-10  cursor-pointer" src="${value.flags.svg}" alt=""/>
+                <img class=" h-12 w-16 rounded-md" src="${value.flags.svg}" />
                 <p class="text-[18px] cursor-pointer">Flag of ${value.name.common}</p>
                 </div>
                 `;

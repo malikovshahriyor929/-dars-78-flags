@@ -4,7 +4,6 @@ let search = document.querySelector(".search");
 let searchInput = document.querySelector(".searchInput");
 let searchResults = document.querySelector(".searchResults");
 let area = JSON.parse(localStorage.getItem("area")) || [];
-console.log(area);
 let name = document.querySelector(".name");
 let desciption = document.querySelector(".desciption");
 let flag = document.querySelector(".flag");
@@ -15,10 +14,8 @@ fetch(BASE_URL)
     data.forEach((value) => {
       if (value.area == area) {
         name.innerHTML = value.name.common;
-
         desciption.innerHTML = value.flags.alt;
         flag.src = value.flags.svg;
-        console.log(value);
       }
     });
   });
@@ -29,7 +26,10 @@ function searchData(data) {
     let currentValue = e.target.value.trim().toLowerCase();
     searchResults.innerHTML = "";
     data.forEach((value) => {
-      if (value.name.common.includes(currentValue)||value.name.official.includes(currentValue)) {
+      if (
+        value.name.common.includes(currentValue) ||
+        value.name.official.includes(currentValue)
+      ) {
         if (searchInput.value !== "" && searchInput.value !== " ") {
           searchResults.style.display = "flex";
 
